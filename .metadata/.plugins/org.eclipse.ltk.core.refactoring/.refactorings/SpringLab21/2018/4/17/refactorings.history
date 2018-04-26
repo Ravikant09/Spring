@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.sunny.spring&apos; to &apos;com.kantravi.spring&apos;&#x0D;&#x0A;- Original project: &apos;SpringLab21&apos;&#x0D;&#x0A;- Original element: &apos;SpringLab21/src/com.sunny.spring&apos;&#x0D;&#x0A;- Renamed element: &apos;SpringLab21/src/com.kantravi.spring&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.sunny.spring&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.sunny.spring" name="com.kantravi.spring" qualified="false" references="true" stamp="1524595972986" textual="false" version="1.0"/>
+</session>

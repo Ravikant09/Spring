@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+	
+	
+	<bean id="adds" class="com.sunny.spring.Address">	
+	
+	<constructor-arg value="BTM Layout" />
+	<constructor-arg value="Bangalore" />
+	<constructor-arg value="Karnataka" />
+	
+	</bean>	
+	
+	<bean id="acc1" class="com.sunny.spring.Account">
+	
+	<property name="accno" value="7777" />
+	<property name="atype" value="S.A" />
+	<property name="bal" value="45000.00" />
+	
+	</bean>
+	
+
+	<bean id="acc2" class="com.sunny.spring.Account">
+	
+	<property name="accno" value="8888" />
+	<property name="atype" value="C.A" />
+	<property name="bal" value="80000.00" />
+	
+	</bean>
+
+
+	<bean id="acc3" class="com.sunny.spring.Account">
+	
+	<property name="accno" value="9999" />
+	<property name="atype" value="S.A" />
+	<property name="bal" value="65000.00" />
+	
+	</bean>
+
+	
+	<bean id="customer" class="com.sunny.spring.Customer">
+	
+	<constructor-arg value="101" />
+	<constructor-arg value="Sunny" />
+	<constructor-arg value="sunny@gmail.com" />
+	<constructor-arg value="8373777737" />
+	
+	<property name="emails">
+	<list>
+	
+	<value>aditi@gmail.com</value>
+	<value>mohan@gmail.com</value>
+	<value>kshiti@gmail.com</value>
+	<value>pooja@gmail.com</value>
+	
+	</list>
+	</property>
+	
+	<property name="phones">
+	<set>
+	
+	<value>8373777373</value>
+	<value>9383866171</value>
+	<value>9387766099</value>
+	
+	</set>
+	</property>
+	
+	<property name="refs">
+	<map>
+	
+	<entry key="Rajiv" value="9809989788" />
+	<entry key="Rohit" value="7864092351" />	
+	<entry key="Mohit" value="7865302222" />
+	
+	
+	</map>
+	</property>
+	
+	<property name="myProps">
+	<props>
+	
+	<prop key="Manab">8272777282</prop>
+	<prop key="Punit">9856738920</prop>
+	
+	
+	</props>
+	</property>
+	
+	<property name="address" ref="adds" />
+	
+	<property name="accounts">
+	<list>
+	
+	<ref bean="acc1"/>
+	<ref bean="acc2"/>
+	<ref bean="acc3"/>
+	
+	</list>
+	</property>
+	
+	
+	</bean>
+	
+	
+</beans>
+	
+	
+	
+	<!-- How many times constructor-arg is there inside bean spring conatainer will
+	understand whether it is one,two or.......argumented constructor 
+	
+	reference of another bean must be used by ref tag and not by value tag
+	
+	Whether in Bean class we gave data type as int or string or another but in 
+	configuration file(myConfiguration.xml) with value or ref or id or class or name
+	we must use "" 
+	
+	-->

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+	
+	<bean id="ao" class="com.sunny.spring.A">
+	<!-- DataType(A Type) Found So Inject Successfully -->
+	
+	<property name="a" value="102" />			
+	<property name="msg" value="Hello Guys" />	
+	
+	</bean>
+	
+	<!-- DataType(B Type) Not Found So remains UnInjected -->
+	
+	
+	<bean id="hello" class="com.sunny.spring.Hello" autowire="byType" />
+		<!-- Identifying Bean by name -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</beans>
+	
+	
+	
+	<!-- How many times constructor-arg is there inside bean spring conatainer will
+	understand whether it is one,two or.......argumented constructor 
+	
+	reference of another bean must be used by ref tag and not by value tag
+	
+	Whether in Bean class we gave data type as int or string or another but in 
+	configuration file(myConfiguration.xml) with value or ref or id or class or name
+	we must use "" 
+	
+	-->

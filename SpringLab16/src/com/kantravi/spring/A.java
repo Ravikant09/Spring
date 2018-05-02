@@ -3,7 +3,7 @@ package com.kantravi.spring;
 public class A {			//Simple Dependency
 
 	private int a;			//Setter Injection
-	private String msg;		//Setter Injection
+	private String msg;		//Setter Injection is
 	
 	static{
 		System.out.println("A-StaticBlock");
